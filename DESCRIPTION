@@ -1,10 +1,10 @@
 Package: asthma
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: This R package mainly shows the relationship between asthma and some variables.
+Version: 0.1.0
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
+    person("Tianyan", "Zhou", , "melody.zhou@mail.utoronto.ca", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+Description: This R package mainly shows the relationship between asthma and some variables.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
@@ -18,4 +18,4 @@ VignetteBuilder: knitr
 NeedsCompilation: no
 Packaged: 2022-11-15 17:11:50 UTC; wyc
 Author: First Last [aut, cre] (YOUR-ORCID-ID)
-Maintainer: First Last <first.last@example.com>
+Maintainer: Tianyan Zhou <melody.zhou@mail.utoronto.ca>
