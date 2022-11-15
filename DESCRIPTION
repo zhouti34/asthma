@@ -1,11 +1,10 @@
 Package: asthma
-Title: asthma
-Version: 0.1.0
-Authors@R:
-    person("Tianyan", "Zhou", , "melody.zhou@mail.utoronto.ca", role = c("aut", "cre"),
+Title: What the Package Does (One Line, Title Case)
+Version: 0.0.0.9000
+Authors@R: 
+    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: A package mainly shows the relationship between asthma and some
-variables, such as age, BMI, physical activity (PA), etc.
+Description: What the package does (one paragraph).
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
@@ -17,6 +16,6 @@ Depends: R (>= 2.10)
 LazyData: true
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2022-11-15 16:16:29 UTC; wyc
-Author: Tianyan Zhou [aut, cre] (YOUR-ORCID-ID)
-Maintainer: Tianyan Zhou <melody.zhou@mail.utoronto.ca>
+Packaged: 2022-11-15 17:11:50 UTC; wyc
+Author: First Last [aut, cre] (YOUR-ORCID-ID)
+Maintainer: First Last <first.last@example.com>

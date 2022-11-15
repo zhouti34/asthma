@@ -2,7 +2,7 @@
 #'
 #' This function serves to draw a histogram of the variables
 #'A histogram is an exact graphical representation of the distribution of numerical data.
-#'It is an estimate of the probability distribution of a continuous variable (quantitative variable).
+#'It is an estimate of the probability distribution of a continuous variable (quantitative variable) that
 #'The first step is to segment the range of values
 #'These values are usually specified as continuous, non-overlapping intervals of the variable.
 #'The intervals must be adjacent and usually (but not necessarily) of equal size
