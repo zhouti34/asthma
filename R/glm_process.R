@@ -22,6 +22,8 @@
 #' family <- "binomial"
 #' data <- test
 #' glm_process(x,y,cov,family,data)
+#' @references R Core Team (2022). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. URL <https://www.R-project.org/>.
+#' @references Henry L, Wickham H (2020). purrr: Functional Programming Tools. R package version 0.3.4, <https://CRAN.R-project.org/package=purrr>.
 #'
 #'
 #'

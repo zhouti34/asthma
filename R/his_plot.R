@@ -20,7 +20,7 @@
 #'x <- c("AGE")
 #'data <- test
 #' his_plot(x,"title","xlab","ylab",data)
-#'
+#' @references H. Wickham. ggplot2: Elegant Graphics for Data Analysis. Springer-Verlag New York, 2016.
 
 his_plot <- function(x,title,xlab,ylab,data){
 

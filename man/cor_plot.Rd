@@ -30,3 +30,12 @@ data <- test
 cor_name <- c("PA","BMI","AGE")
 cor_plot(cor_name,data)
 }
+\references{
+H. Wickham. ggplot2: Elegant Graphics for Data Analysis. Springer-Verlag New York, 2016.
+
+Taiyun Wei and Viliam Simko (2021). R package 'corrplot': Visualization of a Correlation Matrix (Version 0.92). Available from \url{https://github.com/taiyun/corrplot}
+
+Kassambara A (2022). ggcorrplot: Visualization of a Correlation Matrix using 'ggplot2'. R package version 0.1.4, \url{https://CRAN.R-project.org/package=ggcorrplot}.
+
+R Core Team (2022). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. URL \url{https://www.R-project.org/}.
+}
