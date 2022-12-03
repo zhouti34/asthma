@@ -28,55 +28,17 @@ You can install the development version of asthma from
 
 ``` r
 require("devtools")
-#> Loading required package: devtools
-#> Warning: package 'devtools' was built under R version 4.2.2
-#> Loading required package: usethis
-#> Warning: package 'usethis' was built under R version 4.2.2
 devtools::install_github("https://github.com/zhouti34/asthma/tree/master", build_vignettes = TRUE)
-#> Downloading GitHub repo zhouti34/asthma@master
-#> digest (0.6.29 -> 0.6.30) [CRAN]
-#> xfun   (0.33   -> 0.34  ) [CRAN]
-#> yaml   (2.3.5  -> 2.3.6 ) [CRAN]
-#> purrr  (0.3.4  -> 0.3.5 ) [CRAN]
-#> Installing 4 packages: digest, xfun, yaml, purrr
-#> Installing packages into 'C:/Users/Melody/AppData/Local/Temp/Rtmp6x6zig/temp_libpath69ac70f6f98'
-#> (as 'lib' is unspecified)
-#> package 'digest' successfully unpacked and MD5 sums checked
-#> package 'xfun' successfully unpacked and MD5 sums checked
-#> package 'yaml' successfully unpacked and MD5 sums checked
-#> package 'purrr' successfully unpacked and MD5 sums checked
-#> 
-#> The downloaded binary packages are in
-#>  C:\Users\Melody\AppData\Local\Temp\RtmpQ3MOn9\downloaded_packages
-#>       ✔  checking for file 'C:\Users\Melody\AppData\Local\Temp\RtmpQ3MOn9\remotes3e04691d14\zhouti34-asthma-e4d2b15/DESCRIPTION'
-#>       ─  preparing 'asthma':
-#> ✔  checking DESCRIPTION meta-information
-#>       ─  installing the package to build vignettes
-#>          creating vignettes ...     creating vignettes ...   ✔  creating vignettes (11s)
-#>       ─  checking for LF line-endings in source and make files and shell scripts
-#>   ─  checking for empty or unneeded directories
-#>       ─  building 'asthma_0.1.0.tar.gz'
-#>      
-#> 
-#> Installing package into 'C:/Users/Melody/AppData/Local/Temp/Rtmp6x6zig/temp_libpath69ac70f6f98'
-#> (as 'lib' is unspecified)
 library("asthma")
 ```
 
 ## Overview
-
-<br> <br> <br>
-
 ``` r
 ls("package:asthma")
-#> [1] "cor_plot"    "data_pre"    "describe"    "glm_process" "his_plot"   
-#> [6] "test"
 data(package = "asthma") 
 browseVignettes("asthma")
-#> starting httpd help server ... done
 ```
-
-<br> <br> <br> `asthma`contains 5 functions to demonstrate the
+`asthma`contains 5 functions to demonstrate the
 relationship between Asthma and other variables, such as age, BMI,
 physical activity (PA), etc. The `cor_plot`function fit the correlation
 between variables. It uses the Spearman’s correlation coefficient
@@ -149,4 +111,50 @@ who provided feedback to improve this package.
 
 ## Package Structure
 
-The package tree structure is provided below. <br> <br> <br>
+The package tree structure is provided below. 
+``` r
+- asthma
+  |- asthma.Rproj
+  |- DESCRIPTION
+  |- NAMESPACE
+  |- LICENSE
+  |- LICENSE.md
+  |- README.md
+  |- README.Rmd
+  |- build
+    |- vignette.rds
+  |- data
+    |- test.rda
+  |- inst
+    |- doc
+        vinette.html
+        vignette.R
+        vignette.Rmd
+  |- man
+    |- cor_plot.Rd
+    |- data_pre.Rd
+    |- describe.Rd
+    |- glm_process.Rd
+    |- his_plot.Rd
+    |- test.Rd
+    |- figures
+        README-pressure-1.png
+  |- R
+    |- cor_plot.Rd
+    |- data_pre.Rd
+    |- describe.Rd
+    |- glm_process.Rd
+    |- his_plot.Rd
+    |- test.Rd
+    |- sysdata.rda
+  |- vignettes
+    |- vignette.Rmd
+  |- tests
+    |- testthat.R
+    |- testthat
+      |- test-cor_plot.R
+      |- test-data_pre.R
+      |- test_describe.R
+      |- test-glm_process.R
+      |- test_his_plot.R
+```
