@@ -13,32 +13,35 @@
 #' BMI, activity level (PA), age, gender, race, alcohol use (ALQ), and smoking status (COT).
 #'
 #' @name  summaryData
-#' @param x Independent variable
-#' @param y Dependentvariable
+#'
+#' @param ind Independent variable
+#' @param dep Dependentvariable
 #' @param cov Covariates
 #' @param data Dataset you want to describe,must be a dataframe
 #'
 #' @return  A table in Viewwe windows,and summary statistics of variables
+#'
 #' @export
+#'
 #' @examples data("test")
-#' y <- c("ASTHMA")
-#' x <- c("AGE")
+#' ind <- c("ASTHMA")
+#' dep <- c("AGE")
 #' cov <- c("PA","BMI")
 #' data <- test
-#' summaryData(x,y,cov,data)
+#' summaryData(ind,dep,cov,data)
 
 
 
 
 
-summaryData <- function(x,y,cov,data){
-  Y <- paste0(y,collapse = "+")
-  X <- paste0(x,collapse = "+")
+summaryData <- function(ind,dep,cov,data){
+  dep <- paste0(y,collapse = "+")
+  ind <- paste0(x,collapse = "+")
   COV <- paste0(cov,collapse = "+")
-  t1 <- paste0("~",Y,"+",X,"+",COV)
+  t1 <- paste0("~",dep,"+",ind,"+",COV)
   t <-  table1::table1(as.formula(t1),data=data)
-  t2 <- summary(data[,x])
-  t3 <- summary(data[,y])
+  t2 <- summary(data[,ind])
+  t3 <- summary(data[,dep])
   t4 <- summary(data[,cov])
   all_summary <- list(t,t2,t3,t4)
   names(all_summary) <- c("TABLE1","X_SUMMARY","Y_SUMMARY","COV_SUMMARY")
