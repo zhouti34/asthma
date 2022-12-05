@@ -24,8 +24,8 @@
 #' @export
 #'
 #' @examples data("test")
-#' ind <- c("ASTHMA")
-#' dep <- c("AGE")
+#' dep <- c("ASTHMA")
+#' ind <- c("AGE")
 #' cov <- c("PA","BMI")
 #' data <- test
 #' summaryData(ind,dep,cov,data)
