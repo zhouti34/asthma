@@ -7,7 +7,7 @@
 #' @param ln_name Variable you want to ln
 #' @param fc_name Variable you want to treat as factor
 #' @param data Data waited to be computed
-#'
+#' @import purrr
 #' @return A transformed data frame
 #' @export
 #' @examples data("test")
