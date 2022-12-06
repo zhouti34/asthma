@@ -23,11 +23,11 @@
 #'
 #' @export
 #'
-#' @examples data("test")
+#' @examples data("asthmaSurvey")
 #' dep <- c("ASTHMA")
 #' ind <- c("AGE")
 #' cov <- c("PA","BMI")
-#' data <- test
+#' data <- asthmaSurvey
 #' summaryData(ind,dep,cov,data)
 
 
@@ -35,10 +35,10 @@
 
 
 summaryData <- function(ind,dep,cov,data){
-  dep <- paste0(y,collapse = "+")
-  ind <- paste0(x,collapse = "+")
+  Y <- paste0(dep,collapse = "+")
+  X <- paste0(ind,collapse = "+")
   COV <- paste0(cov,collapse = "+")
-  t1 <- paste0("~",dep,"+",ind,"+",COV)
+  t1 <- paste0("~",Y,"+",X,"+",COV)
   t <-  table1::table1(as.formula(t1),data=data)
   t2 <- summary(data[,ind])
   t3 <- summary(data[,dep])

@@ -1,12 +1,14 @@
-#' Glm_press
+#'GLM_plot
 #'
-#' This function is used to fit the linear relationship between variables
-#' generalize linear model  an extension of the linear model that
+#' GLM is standed for generalized linear model, which is used to fit the linear relationship between variables.
+#' The generalize linear model is an extension of the linear model that meet the
 #' mathematical expectations of the response variables and the predictor variables of the linear combination are established by a linkage function
 #' The relationship between the mathematical expectation of the response variable and the linear combination of the predictor variables.
 #' It is an extension of the linear model in studying the non-normal
 #' distribution of response values and the concise and direct linear transformation of nonlinear models.
+
 #' @import purrr stats
+#'
 #' @param x Independent variable
 #' @param y Dependentvariable
 #' @param cov Covariates
@@ -14,21 +16,22 @@
 #' @param data Data to be computed
 #'
 #' @return A result dataframe and regression curves with points of x,use plot() to draw plots
+#'
 #' @export
-#' @examples data("test")
+#'
+#' @examples data("asthmaSurvey")
 #' y <- c("ASTHMA")
 #' x <- c("AGE")
 #' cov <- c("PA","BMI")
 #' family <- "binomial"
-#' data <- test
-#' glm_process(x,y,cov,family,data)
+#' data <- asthmaSurvey
+#' GLM_plot(x,y,cov,family,data)
+#'
 #' @references R Core Team (2022). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. URL <https://www.R-project.org/>.
 #' @references Henry L, Wickham H (2020). purrr: Functional Programming Tools. R package version 0.3.4, <https://CRAN.R-project.org/package=purrr>.
 #'
-#'
-#'
-#'
-glm_process <- function(x,y,cov,family,data){
+
+GLM_plot <- function(x,y,cov,family,data){
 
   Y <- paste0(y,collapse = "+")
   X <- paste0(x,collapse = "+")
@@ -48,9 +51,5 @@ glm_process <- function(x,y,cov,family,data){
  names(t3) <- c("result","plot")
  print(t3[[2]])
  return(t3)
-
-
-
-
 }
 

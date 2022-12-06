@@ -1,7 +1,7 @@
 #' @docType data
-#' @name test
+#' @name asthmaSurvey
 #'
-#' @title Test data
+#' @title asthmaSurvey data
 #' @description  A dataset
 #' @details Success!!
 NULL

@@ -14,10 +14,10 @@
 #'
 #' @export
 #'
-#' @examples data("test")
+#' @examples data("asthmaSurvey")
 #' ln_name <- c("AGE")
 #' fc_name <- c("ASTHMA")
-#' data <- test
+#' data <- asthmaSurvey
 #' adjust(ln_name,fc_name,data)
 #'
 adjust <- function(ln_name,fc_name,data){
