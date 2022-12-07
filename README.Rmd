@@ -43,7 +43,7 @@ browseVignettes("asthma")
 
 Refer to package vignettes for more details. An overview of the package is illustrated below.
 
-![](./inst/extdata/asthma_tree.png)
+![](./inst/extdata/readme.png)
 
 
 
@@ -69,54 +69,6 @@ Henry L, Wickham H (2020). purrr: Functional Programming Tools. R package versio
 ## Acknowledgements
 This package was developed as part of an assessment for 2022 BCB410H: Applied Bioinformatics course at the University of Toronto, Toronto, CANADA. `asthma` welcomes issues, enhancement requests, and other contributions. To submit an issue, use the [GitHub issues](https://github.com/zhouti34/asthma/issues). Many thanks to those who provided feedback to improve this package.
 
-## Package Structure
-The package tree structure is provided below.
-```{r}
-- asthma
-  |- asthma.Rproj
-  |- DESCRIPTION
-  |- NAMESPACE
-  |- LICENSE
-  |- LICENSE.md
-  |- README.md
-  |- README.Rmd
-  |- build
-    |- vignette.rds
-  |- data
-    |- test.rda
-  |- inst
-    |- doc
-        vinette.html
-        vignette.R
-        vignette.Rmd
-  |- man
-    |- cor_plot.Rd
-    |- data_pre.Rd
-    |- describe.Rd
-    |- glm_process.Rd
-    |- his_plot.Rd
-    |- test.Rd
-    |- figures
-        README-pressure-1.png
-  |- R
-    |- cor_plot.Rd
-    |- data_pre.Rd
-    |- describe.Rd
-    |- glm_process.Rd
-    |- his_plot.Rd
-    |- test.Rd
-    |- sysdata.rda
-  |- vignettes
-    |- vignette.Rmd
-  |- tests
-    |- testthat.R
-    |- testthat
-      |- test-cor_plot.R
-      |- test-data_pre.R
-      |- test_describe.R
-      |- test-glm_process.R
-      |- test_his_plot.R
-```
 
 
 

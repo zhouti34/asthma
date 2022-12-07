@@ -7,7 +7,7 @@
 #'These values are usually specified as continuous, non-overlapping intervals of the variable.
 #'The intervals must be adjacent and usually (but not necessarily) of equal size
 #' @import ggplot2
-#' @param x The variable you want to plot
+#' @param x Character vector specifying the variable from the dataset to be plot. Example "AGE".
 #' @param title Plot's title
 #' @param xlab  Name of xlab
 #' @param ylab  Name of ylab

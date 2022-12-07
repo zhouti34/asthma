@@ -28,30 +28,39 @@ You can install the development version of asthma from
 
 ``` r
 require("devtools")
-devtools::install_github("https://github.com/zhouti34/asthma/tree/master", build_vignettes = TRUE)
+#> Loading required package: devtools
+#> Loading required package: usethis
+devtools::install_github("https://github.com/zhouti34/asthma", build_vignettes = TRUE)
+#> Skipping install of 'asthma' from a github remote, the SHA1 (fbef4679) has not changed since last install.
+#>   Use `force = TRUE` to force installation
 library("asthma")
 ```
 
 ## Overview
+
 ``` r
 ls("package:asthma")
+#> [1] "cor_plot"    "data_pre"    "describe"    "glm_process" "his_plot"   
+#> [6] "test"
 data(package = "asthma") 
 browseVignettes("asthma")
+#> starting httpd help server ... done
 ```
-`asthma`contains 5 functions to demonstrate the
-relationship between Asthma and other variables, such as age, BMI,
-physical activity (PA), etc. The `cor_plot`function fit the correlation
-between variables. It uses the Spearman’s correlation coefficient
-indicates the direction of correlation between X (the independent
-variable) and Y (the dependent variable). The `describe` function is
-used to describe the basic situation of the variables in the data set,
-such as the maximum and minimum values, the 25th quartile and the 75th
-quartile. `data_pre`function is used to pre-process the data for
-regression. It is for variables that require categorical analysis, and
-this function factors out the variable. `glm_process` is used to fit the
-linear relationship between variables and generalize linear model. It is
-an extension of the linear model in studying the non-normal distribution
-of response values and the concise and direct linear transformation of
+
+`asthma`contains 5 functions to demonstrate the relationship between
+Asthma and other variables, such as age, BMI, physical activity (PA),
+etc. The `cor_plot`function fit the correlation between variables. It
+uses the Spearman’s correlation coefficient indicates the direction of
+correlation between X (the independent variable) and Y (the dependent
+variable). The `describe` function is used to describe the basic
+situation of the variables in the data set, such as the maximum and
+minimum values, the 25th quartile and the 75th quartile.
+`data_pre`function is used to pre-process the data for regression. It is
+for variables that require categorical analysis, and this function
+factors out the variable. `glm_process` is used to fit the linear
+relationship between variables and generalize linear model. It is an
+extension of the linear model in studying the non-normal distribution of
+response values and the concise and direct linear transformation of
 nonlinear models. `his_plot`serves to draw a histogram of the variables,
 and it is an estimate of the probability distribution of a continuous
 variable (quantitative variable). `asthma` contains a dataset under the
@@ -61,7 +70,7 @@ gender, ethnics, BMI…etc.
 Refer to package vignettes for more details. An overview of the package
 is illustrated below.
 
-![](./inst/extdata/asthma_tree.png)
+![](./inst/extdata/readme.png)
 
 ## Contributions
 
@@ -108,53 +117,3 @@ CANADA. `asthma` welcomes issues, enhancement requests, and other
 contributions. To submit an issue, use the [GitHub
 issues](https://github.com/zhouti34/asthma/issues). Many thanks to those
 who provided feedback to improve this package.
-
-## Package Structure
-
-The package tree structure is provided below. 
-``` r
-- asthma
-  |- asthma.Rproj
-  |- DESCRIPTION
-  |- NAMESPACE
-  |- LICENSE
-  |- LICENSE.md
-  |- README.md
-  |- README.Rmd
-  |- build
-    |- vignette.rds
-  |- data
-    |- test.rda
-  |- inst
-    |- doc
-        vinette.html
-        vignette.R
-        vignette.Rmd
-  |- man
-    |- cor_plot.Rd
-    |- data_pre.Rd
-    |- describe.Rd
-    |- glm_process.Rd
-    |- his_plot.Rd
-    |- test.Rd
-    |- figures
-        README-pressure-1.png
-  |- R
-    |- cor_plot.Rd
-    |- data_pre.Rd
-    |- describe.Rd
-    |- glm_process.Rd
-    |- his_plot.Rd
-    |- test.Rd
-    |- sysdata.rda
-  |- vignettes
-    |- vignette.Rmd
-  |- tests
-    |- testthat.R
-    |- testthat
-      |- test-cor_plot.R
-      |- test-data_pre.R
-      |- test_describe.R
-      |- test-glm_process.R
-      |- test_his_plot.R
-```
