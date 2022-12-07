@@ -19,7 +19,7 @@
 #'y <- c("ASTHMA")
 #'x <- c("AGE")
 #'data <- test
-#' his_plot(x,"title","xlab","ylab",data)
+#' his_plot(x,"Histogram Plot","x","frequency",data)
 #'
 
 his_plot <- function(x,title,xlab,ylab,data){
