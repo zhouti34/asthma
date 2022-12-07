@@ -13,22 +13,22 @@
 #' BMI, activity level (PA), age, gender, race, alcohol use (ALQ), and smoking status (COT).
 #'
 #' @name  Describe
+#'
 #' @param x Independent variable
 #' @param y Dependentvariable
 #' @param cov Covariates
 #' @param data Dataset you want to describe,must be a dataframe
 #'
 #' @return  A table in Viewwe windows,and summary statistics of variables
+#'
 #' @export
+#'
 #' @examples data("test")
 #' y <- c("ASTHMA")
 #' x <- c("AGE")
 #' cov <- c("PA","BMI")
 #' data <- test
 #' describe(x,y,cov,data)
-
-
-
 
 
 describe <- function(x,y,cov,data){

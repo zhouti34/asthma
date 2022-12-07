@@ -9,7 +9,9 @@
 #' @param data Data waitted ti be compute
 #'
 #' @return A transformed dataframe
+#'
 #' @export
+#'
 #' @examples data("test")
 #' ln_name <- c("AGE")
 #' fc_name <- c("ASTHMA")

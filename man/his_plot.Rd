@@ -7,7 +7,7 @@
 his_plot(x, title, xlab, ylab, data)
 }
 \arguments{
-\item{x}{The variable you want to plot}
+\item{x}{Character vector specifying the variable from the dataset to be plot. Example "AGE".}
 
 \item{title}{Plot's title}
 
@@ -30,10 +30,7 @@ The intervals must be adjacent and usually (but not necessarily) of equal size
 }
 \examples{
 data("test")
-y <- c("ASTHMA")
-x <- c("AGE")
-data <- test
-his_plot(x,"title","xlab","ylab",data)
+
 }
 \references{
 H. Wickham. ggplot2: Elegant Graphics for Data Analysis. Springer-Verlag New York, 2016.

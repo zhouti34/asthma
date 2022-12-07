@@ -36,9 +36,10 @@ cov <- c("PA","BMI")
 family <- "binomial"
 data <- test
 glm_process(x,y,cov,family,data)
+
 }
 \references{
-R Core Team (2022). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. URL \url{https://www.R-project.org/}.
+Henry L, Wickham H (2020). purrr: Functional Programming Tools. R package version 0.3.4, \url{https://CRAN.R-project.org/package=purrr}
 
-Henry L, Wickham H (2020). purrr: Functional Programming Tools. R package version 0.3.4, \url{https://CRAN.R-project.org/package=purrr}.
+R Core Team (2022). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. \url{https://www.R-project.org/}.
 }

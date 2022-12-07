@@ -7,6 +7,7 @@
 #' It is an extension of the linear model in studying the non-normal
 #' distribution of response values and the concise and direct linear transformation of nonlinear models.
 #' @import purrr stats
+#'
 #' @param x Independent variable
 #' @param y Dependentvariable
 #' @param cov Covariates
@@ -14,7 +15,9 @@
 #' @param data Data to be computed
 #'
 #' @return A result dataframe and regression curves with points of x,use plot() to draw plots
+#'
 #' @export
+#'
 #' @examples data("test")
 #' y <- c("ASTHMA")
 #' x <- c("AGE")
@@ -23,9 +26,11 @@
 #' data <- test
 #' glm_process(x,y,cov,family,data)
 #'
-#'
-#'
-#'
+#' @references Henry L, Wickham H (2020). purrr: Functional Programming Tools. R package version 0.3.4, <https://CRAN.R-project.org/package=purrr>
+#' @references R Core Team (2022). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. <https://www.R-project.org/>.
+
+
+
 glm_process <- function(x,y,cov,family,data){
 
   Y <- paste0(y,collapse = "+")

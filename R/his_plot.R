@@ -7,6 +7,7 @@
 #'These values are usually specified as continuous, non-overlapping intervals of the variable.
 #'The intervals must be adjacent and usually (but not necessarily) of equal size
 #' @import ggplot2
+#'
 #' @param x Character vector specifying the variable from the dataset to be plot. Example "AGE".
 #' @param title Plot's title
 #' @param xlab  Name of xlab
@@ -14,13 +15,16 @@
 #' @param  data to be compute
 #'
 #' @return A histogram plot
-#' @export
-#' @examples data("test")
-#'y <- c("ASTHMA")
-#'x <- c("AGE")
-#'data <- test
-#' his_plot(x,"Histogram Plot","x","frequency",data)
 #'
+#' @export
+#'
+#' @examples data("test")
+# 'y <- c("ASTHMA")
+# 'x <- c("AGE")
+# 'data <- test
+# ' his_plot(x,"Histogram Plot","x","frequency",data)
+#'
+#' @references H. Wickham. ggplot2: Elegant Graphics for Data Analysis. Springer-Verlag New York, 2016.
 
 his_plot <- function(x,title,xlab,ylab,data){
 
