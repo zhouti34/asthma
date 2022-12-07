@@ -1,0 +1,13 @@
+citHeader("To cite asthma in publications use:")
+
+citEntry(
+  entry    = "unpublished",
+  title    = "asthma",
+  author   = "Tianyan Zhou",
+  notes    = "unpublished"
+  year     = "2022",
+
+  textVersion =
+  paste("Zhou, T. (2022) asthma: An Example R Package For
+  BCB410H. Unpublished. URL https://github.com/zhouti34/asthma/tree/master.")
+)
