@@ -28,11 +28,7 @@ You can install the development version of asthma from
 
 ``` r
 require("devtools")
-#> Loading required package: devtools
-#> Loading required package: usethis
 devtools::install_github("https://github.com/zhouti34/asthma", build_vignettes = TRUE)
-#> Skipping install of 'asthma' from a github remote, the SHA1 (fbef4679) has not changed since last install.
-#>   Use `force = TRUE` to force installation
 library("asthma")
 ```
 
@@ -40,11 +36,8 @@ library("asthma")
 
 ``` r
 ls("package:asthma")
-#> [1] "cor_plot"    "data_pre"    "describe"    "glm_process" "his_plot"   
-#> [6] "test"
 data(package = "asthma") 
 browseVignettes("asthma")
-#> starting httpd help server ... done
 ```
 
 `asthma`contains 5 functions to demonstrate the relationship between

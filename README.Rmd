@@ -33,6 +33,12 @@ devtools::install_github("https://github.com/zhouti34/asthma", build_vignettes =
 library("asthma")
 ```
 
+shiny app
+
+```{r}
+runasthma()
+```
+
 ## Overview
 ```{r}
 ls("package:asthma")
