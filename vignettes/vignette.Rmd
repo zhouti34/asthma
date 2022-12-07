@@ -39,7 +39,7 @@ To download **asthma**, use the following commands:
 
 ```{r}
 require("devtools")
-devtools::install_github("https://github.com/zhouti34/asthma/tree/master", build_vignettes = TRUE)
+devtools::install_github("https://github.com/zhouti34/asthma", build_vignettes = TRUE)
 library("asthma")
 ```
 
@@ -147,6 +147,6 @@ Henry L, Wickham H (2020). purrr: Functional Programming Tools. R package versio
 ----
 
 ```{r}
-sessioninfo()
+sessionInfo()
 ```
 
