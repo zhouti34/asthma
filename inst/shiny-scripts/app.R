@@ -9,7 +9,7 @@ ui <- fluidPage(
   titlePanel("Data distribution and viusalized"),
   #  fileInput("file1", label = "Please upload file: ", accept = c(".csv", ".tsv", ".txt")),
   ######file####
-  fileInput("file", label = "Please upload file(csv will be acceptable),example data will be find in url above: ", accept = c(".csv", ".tsv", ".txt")),
+  fileInput("file", label = "Please upload csv file with columns of different variables you want to see the relationship with Asthma, and with a column specified individual's asthma condition(1 or 0).  Example data will be find in url above: ", accept = c(".csv", ".tsv", ".txt")),
   uiOutput("tab"),
 
 
@@ -56,7 +56,7 @@ ui <- fluidPage(
     sidebarPanel(
       checkboxGroupInput(
         "fc_name",
-        "Categorical variables should treated as factor in glm,y(Dependent variable) in glm should be defined here because status of disease only with 0 or 1",
+        "Categorical variables should treated as factor in glm, y(Dependent variable) in glm should be defined here because status of disease only with 0 or 1",
         choices = c("AGE","GENDER"),
       )
     ),mainPanel(tableOutput(outputId = "data_lay"))
@@ -68,7 +68,7 @@ ui <- fluidPage(
     sidebarPanel(
       checkboxGroupInput(
         "glm_cov",
-        "Covariates in glm ,attention ,Don't be the same as inependent(x) ",
+        "Covariates in glm. Attention: don't be the same as inependent(x) ",
         choices = c("AGE","GENDER"),
       )
     ),mainPanel("")
@@ -77,7 +77,7 @@ ui <- fluidPage(
   sidebarLayout(
     sidebarPanel(
       textInput(inputId = "glm_y",
-                label = "Dependent variable in regression,should be defined in fc_name",
+                label = "Dependent variable in regression, should be defined in fc_name",
                 value = "ASTHMA"
       )
 
@@ -88,7 +88,7 @@ ui <- fluidPage(
   sidebarLayout(
     sidebarPanel(
       textInput(inputId = "glm_x",
-                label = "Inependent variable in regression",
+                label = "Independent variable in regression",
                 value = "AGE"
       )
 
@@ -100,7 +100,7 @@ ui <- fluidPage(
 
 
 server <- function(input, output,session) {
-  url <- a("tes,csv here", href="https://github.com/zhouti34/asthma/tree/master/inst/extdata/test.csv")
+  url <- a("Example: test.csv", href="https://github.com/zhouti34/asthma/tree/master/inst/extdata/test.csv")
   output$tab <- renderUI({
     tagList("URL link:", url)})
   data_use <- reactive({
@@ -153,14 +153,14 @@ server <- function(input, output,session) {
   # output$text <- renderText(input$cor_x[[1]])
   output$His_plot    <- renderPlot({
 
-    print(his_plot(input$varx,title = paste0("his of",input$varx),xlab =input$varx ,ylab = input$vary,data = data_use()))
+    print(his_plot(input$varx,title = paste0("Histogram of ",input$varx),xlab =input$varx ,ylab = input$vary,data = data_use()))
   })
 
 
   output$Cor_plot    <- renderPlot({
     print(cor_plot(input$cor_x, data = data_use()))
   })
-  title1 <- reactive(paste0(input$glm_y,"to",input$glm_x))
+  title1 <- reactive(paste0(input$glm_y," to ",input$glm_x))
 
   data_glm <- reactive((data_pre(ln_name=input$ln_name,fc_name=input$fc_name,data =data_use())))
   output$data_lay <- renderTable(head(x=data_glm(),10))
