@@ -33,8 +33,7 @@ devtools::install_github("https://github.com/zhouti34/asthma", build_vignettes =
 library("asthma")
 ```
 
-shiny app
-
+To run the shiny app:
 ```{r}
 runasthma()
 ```
