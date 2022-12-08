@@ -1,10 +1,7 @@
 # Load libraries
 library(shiny)
 library(asthma)
-
-library(shiny)
-library(asthma)
-
+library(vroom)
 
 ui <- fluidPage(
 
@@ -102,15 +99,6 @@ ui <- fluidPage(
 )#fluid
 
 
-
-# Load libraries
-library(shiny)
-library(asthma)
-######
-library(shiny)
-library(asthma)
-library(vroom)
-
 server <- function(input, output,session) {
   url <- a("tes,csv here", href="https://github.com/zhouti34/asthma/tree/master/inst/extdata/test.csv")
   output$tab <- renderUI({
@@ -185,4 +173,4 @@ server <- function(input, output,session) {
   })
 }#server
 
-shinyApp(ui, server)
+shinyApp(ui = ui, server = server)
