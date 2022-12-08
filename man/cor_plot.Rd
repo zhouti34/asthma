@@ -2,7 +2,7 @@
 % Please edit documentation in R/cor_plot.R
 \name{cor_plot}
 \alias{cor_plot}
-\title{Cor_plot}
+\title{Cor_plot: fits the Spearman's correlation between variables}
 \usage{
 cor_plot(cor_name, data)
 }
@@ -12,7 +12,7 @@ cor_plot(cor_name, data)
 \item{data}{Data waitted ti be compute}
 }
 \value{
-Cor_plot
+returns a corrplot demonstrates the Spearman's correlation relationship between variables.
 }
 \description{
 This function is used to fit the correlation between variables

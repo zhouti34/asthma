@@ -1,4 +1,4 @@
-#' Data_pre
+#' Data_pre: pre-process data for regression
 #'
 #' This function is used to pre-process the data for regression.
 #' For variables that require categorical analysis, this function factors out the variable.
@@ -8,7 +8,8 @@
 #' @param fc_name Variable you want to treat as factor
 #' @param data Data waitted ti be compute
 #'
-#' @return A transformed dataframe
+#' @import purrr
+#' @return A transformed dataframe with factored out variables and log improvement
 #'
 #' @export
 #'

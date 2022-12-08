@@ -3,7 +3,7 @@
 \name{Describe}
 \alias{Describe}
 \alias{describe}
-\title{Describe}
+\title{Describe: summarize the basic information of data}
 \usage{
 describe(x, y, cov, data)
 }

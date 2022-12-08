@@ -2,7 +2,7 @@
 % Please edit documentation in R/data_pre.R
 \name{data_pre}
 \alias{data_pre}
-\title{Data_pre}
+\title{Data_pre: pre-process data for regression}
 \usage{
 data_pre(ln_name, fc_name, data)
 }
@@ -14,7 +14,7 @@ data_pre(ln_name, fc_name, data)
 \item{data}{Data waitted ti be compute}
 }
 \value{
-A transformed dataframe
+A transformed dataframe with factored out variables and log improvement
 }
 \description{
 This function is used to pre-process the data for regression.

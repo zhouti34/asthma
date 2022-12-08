@@ -2,7 +2,7 @@
 % Please edit documentation in R/glm_process.R
 \name{glm_process}
 \alias{glm_process}
-\title{Glm_press}
+\title{Glm_process: fits the generalized linear relationship between variables.}
 \usage{
 glm_process(x, y, cov, family, data)
 }

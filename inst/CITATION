@@ -2,12 +2,11 @@ citHeader("To cite asthma in publications use:")
 
 citEntry(
   entry    = "Unpublished",
-  title    = "asthma",
+  title    = "Asthma and its relationship with Other Variables",
   author   = "Tianyan Zhou",
-  notes    = "unpublished",
+  notes    = "Unpublished",
   year     = "2022",
 
   textVersion =
-  paste("Zhou, T. (2022) asthma: An Example R Package For
-  BCB410H. Unpublished. URL https://github.com/zhouti34/asthma/tree/master.")
+  paste("Zhou, T. (2022) Asthma and its relationship with Other Variables. Unpublished. URL https://github.com/zhouti34/asthma/tree/master")
 )

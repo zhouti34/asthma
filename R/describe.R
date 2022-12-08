@@ -1,4 +1,4 @@
-#' Describe
+#' Describe: summarize the basic information of data
 #'
 #' This function is used to describe
 #' the basic situation of the variables in

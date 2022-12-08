@@ -1,4 +1,4 @@
-#' Glm_press
+#' Glm_process: fits the generalized linear relationship between variables.
 #'
 #' This function is used to fit the linear relationship between variables
 #' generalize linear model  an extension of the linear model that

@@ -1,4 +1,4 @@
-#' Cor_plot
+#' Cor_plot: fits the Spearman's correlation between variables
 #'
 #' This function is used to fit the correlation between variables
 #'The Spearman's correlation coefficient indicates the direction of correlation between X (the independent variable) and Y (the dependent variable). If
@@ -14,7 +14,7 @@
 #' @param cor_name Variables you want to make corplot
 #' @param data Data waitted ti be compute
 #'
-#' @return Cor_plot
+#' @return returns a corrplot demonstrates the Spearman's correlation relationship between variables.
 #'
 #' @export
 #'

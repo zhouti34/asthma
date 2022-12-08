@@ -2,7 +2,7 @@
 % Please edit documentation in R/his_plot.R
 \name{his_plot}
 \alias{his_plot}
-\title{Histogram_plot}
+\title{his__plot: demonstrates the distribution of chosen variable across population.}
 \usage{
 his_plot(x, title, xlab, ylab, data)
 }
@@ -18,7 +18,7 @@ his_plot(x, title, xlab, ylab, data)
 \item{data}{to be compute}
 }
 \value{
-A histogram plot
+A histogram plot with variable x and its relative frequency of occurrance in the samples.
 }
 \description{
 This function serves to draw a histogram of the variables

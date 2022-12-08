@@ -1,4 +1,4 @@
-#' Histogram_plot
+#' his__plot: demonstrates the distribution of chosen variable across population.
 #'
 #' This function serves to draw a histogram of the variables
 #'A histogram is an exact graphical representation of the distribution of numerical data.
@@ -14,7 +14,7 @@
 #' @param ylab  Name of ylab
 #' @param  data to be compute
 #'
-#' @return A histogram plot
+#' @return A histogram plot with variable x and its relative frequency of occurrance in the samples.
 #'
 #' @export
 #'
