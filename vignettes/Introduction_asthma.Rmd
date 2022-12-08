@@ -54,7 +54,7 @@ ls("package:asthma")
 
 Components are as following.
 
-<div style="text-align:center"><img src="readme.png" alt="readme.png" width="500"/>
+<div style="text-align:center"><img src="readme.png" alt="readme" width="500"/>
 
 <div style="text-align:left">
 
