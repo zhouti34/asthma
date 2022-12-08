@@ -8,7 +8,7 @@
 #' @param fc_name Variable you want to treat as factor
 #' @param data Data waitted ti be compute
 #'
-#' @import purrr
+#' @import purrr dplyr
 #' @return A transformed dataframe with factored out variables and log improvement
 #'
 #' @export

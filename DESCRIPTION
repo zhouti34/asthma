@@ -1,15 +1,15 @@
 Package: asthma
-Title: This R package mainly shows the relationship between asthma and some variables.
+Title: This R package mainly shows the relationship between asthma and some variables
 Version: 0.1.0
 Authors@R: 
     person("Tianyan", "Zhou", , "melody.zhou@mail.utoronto.ca", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: This R package mainly shows the relationship between asthma and some variables.
+Description: This R package mainly shows the relationship between asthma and some variables
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.1
-Imports: stats, corrplot, ggcorrplot, ggplot2, purrr, table1, shiny
+Imports: stats, corrplot, ggcorrplot, ggplot2, purrr, table1, dplyr, shiny
 Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Depends: R (>= 2.10)
