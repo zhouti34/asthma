@@ -1,7 +1,29 @@
-#' @docType data
-#' @name test
+#' Asthma and Other variables From an Survey
 #'
-#' @title Test data
-#' @description  A dataset
-#' @details Success!!
-NULL
+#' The 2005–2006 National Health and Nutrition Examination Survey (NHANES)
+#'
+#' @source NHANES, USA
+#'
+#' @format A matrix with 3295 entries and 14 columns:
+#' \describe{
+#'  \item{Seqn}{Sequence number of individuals}
+#'  \item{ASTHMA}{The condition of Asthma specified by either 1 or 0.}
+#'  \item{AGE}{The age of the individuals.}
+#'  \item{GENDER}{The sex of individuals, either Male or Female.}
+#'  \item{ETH}{The race/ethnicity of individuals (non-Hispanic black, non-Hispanic white, Mexican American and others).}
+#'  \item{PIR}{The family poverty-income ratio (PIR, ≤ 1, >1)}
+#'  \item{EDU}{The education levels (under high school, high school, above high school).}
+#'  \item{BMI}{Body mass index (BMI, kg/m2) of adults was classified into normal weight of <25, overweight of 25 to < 30 and obesity of ≥30. For children, BMI categories were defined according to the age- and gender-specific criteria from an international study.}
+#'  \item{OB}{Numbers of self-reported asthma conditions.}
+#'  \item{ALQ}{The housing characteristics of mildew (yes, no)}.
+#'  \item{PAV}{The housing characteristics of animal (yes, no)}.
+#'  \item{PAM}{The housing characteristics of cockroaches (yes, no) in house.}
+#'  \item{PA}{Symptoms of Asthma specified by no/vigorous/moderate}
+#'  \item{COT}{HbAA and HbGA levels detected by serum cotinine (ng/mL) which was tested by the isotope dilution-high performance liquid chromatography/atmospheric pressure chemical ionization tandem mass spectrometry. The serum continue levels of individuals, specified either by below lower or at/above the detection limit.}
+#'  }
+#'  @examples
+#'  \dontrun{
+#'   test
+#'  }
+"test"
+

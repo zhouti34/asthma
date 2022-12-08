@@ -4,7 +4,7 @@ citEntry(
   entry    = "Unpublished",
   title    = "Asthma and its relationship with Other Variables",
   author   = "Tianyan Zhou",
-  notes    = "Unpublished",
+  note    = "Unpublished",
   year     = "2022",
 
   textVersion =

@@ -30,3 +30,8 @@ data <- test
 data_pre(ln_name,fc_name,data)
 
 }
+\references{
+Henry L, Wickham H (2020). purrr: Functional Programming Tools. R package version 0.3.4, \url{https://CRAN.R-project.org/package=purrr}.
+
+Wickham H, François R, Henry L, Müller K (2022). dplyr: A Grammar of Data Manipulation_. R package version 1.0.10, \url{https://CRAN.R-project.org/package=dplyr}.
+}
