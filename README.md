@@ -107,6 +107,12 @@ computing. R Foundation for Statistical Computing, Vienna, Austria. URL
 Henry L, Wickham H (2020). purrr: Functional Programming Tools. R
 package version 0.3.4, <https://CRAN.R-project.org/package=purrr>.
 
+Chang W, Cheng J, Allaire J, Sievert C, Schloerke B, Xie Y, Allen J, McPherson J, Dipert A,
+Borges B (2022). shiny: Web Application Framework for R. R package version 1.7.3, 
+<https://CRAN.R-project.org/package=shiny>.
+
+Wickham H, François R, Henry L, Müller K (2022). dplyr: A Grammar of Data Manipulation. R package version 1.0.10, <https://CRAN.R-project.org/package=dplyr>.
+
 ## Acknowledgements
 
 This package was developed as part of an assessment for 2022 BCB410H:
